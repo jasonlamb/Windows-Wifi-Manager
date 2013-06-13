@@ -75,7 +75,7 @@
         {
             Process p = new Process();
             p.StartInfo.FileName = "netsh.exe";
-            p.StartInfo.CreateNoWindow = false;
+            p.StartInfo.CreateNoWindow = true;
             p.StartInfo.Arguments = arguments ?? String.Empty;
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
